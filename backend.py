@@ -101,7 +101,7 @@ class State(TypedDict):
 # -----------------------------
 # Groq 1 for structured output
 groq_llm_1 = ChatGroq(
-    model=os.getenv("GROQ_MODEL_1", "openai/gpt-oss-20b"),
+    model=os.getenv("GROQ_MODEL_1", "llama-3.3-70b-versatile"),
     api_key=os.getenv("GROQ_API_KEY"),
     temperature=0,
     max_retries=5,
@@ -109,7 +109,7 @@ groq_llm_1 = ChatGroq(
 
 # Groq 2 for worker text generation
 groq_llm_2 = ChatGroq(
-    model=os.getenv("GROQ_MODEL_2", "openai/gpt-oss-20b"),
+    model=os.getenv("GROQ_MODEL_2", "llama-3.3-70b-versatile"),
     api_key=os.getenv("GROQ_API_KEY_2") or os.getenv("GROQ_API_KEY"),
     temperature=0,
     max_retries=5,
