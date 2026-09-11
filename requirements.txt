@@ -1,0 +1,11 @@
+langchain-google-genai
+langchain-groq
+langchain-core
+langchain-community
+langgraph
+pydantic
+python-dotenv
+streamlit
+pandas
+google-genai
+requests
